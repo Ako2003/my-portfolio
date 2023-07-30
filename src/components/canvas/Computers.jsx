@@ -10,8 +10,8 @@ function Computers(){
   return (
     <mesh>
       <hemisphereLight 
-      intensity={0.15}
-      groundColor="black"
+      intensity={1}
+      groundColor="white"
       />
       <pointLight intensity={1} />
       <spotLight
@@ -48,10 +48,7 @@ const ComputersCanvas = () => {
           />
           <Computers />
         </Suspense>
-
         <Preload all />
-
-
       </Canvas>
   )
 }
