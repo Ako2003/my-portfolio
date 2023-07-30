@@ -41,7 +41,6 @@ const ComputersCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
-      console.log(event);
       setIsMobile(event.matches);
     }
 
