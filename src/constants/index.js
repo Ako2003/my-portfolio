@@ -8,21 +8,18 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    laravel,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
+    adminpanel,
     docker,
     meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    films,
+    language,
+    devops,
+    php,
   } from "../assets";
   
   export const navLinks = [
@@ -42,15 +39,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Nest.js Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Express Developer",
       icon: backend,
     },
     {
@@ -81,8 +78,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Laravel",
+      icon: laravel,
     },
     {
       name: "Tailwind CSS",
@@ -97,16 +94,12 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "PHP",
+      icon: php,
     },
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
@@ -116,50 +109,62 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "HTML Developer",
+      // company_name: "Tesla",
+      icon: html,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Sep 2020 - Jun 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web applications using HTML and other related technologies as CSS and Bootstrap.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "PHP/Laravel Developer",
+      // company_name: "Tesla",
+      icon: php,
+      iconBg: "#E6DEDD",
+      date: "Aug 2021 - Jan 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and maintaining web applications using PHP and HTML.",
+        "Connecting web applications to database and creating some easy requests to the server.",
+        "Working with Laravel framework and some other related technologies such as Voyager, Backpack.",
+        "Assembling some complicated websites using MySQL database."
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "DevOps tools",
+      // company_name: "Shopify",
+      icon: devops,
+      iconBg: "#E6DEDD",
+      date: "Jan 2022 - Dec 2022",
+      points: [
+        "Developing and maintaining web applications using GitHub to make our team work easier.",
+        "Adding some additional staff to our application for making the development processes faster such as Docker, CI/CD, GitLab and etc.",
+        "Starting to deploy web applications to hosting especially to DigitalOcean.",
+        "Using serverless deployment services such as Heroku and Vercel.",
+      ],
+    },
+    {
+      title: "Nest.js Developer",
+      // company_name: "Meta",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
+      points: [
+        "I am involved in the development and upkeep of web applications, leveraging Nest.js and other associated technologies.",
+        "Engaging in collaborative efforts with cross-functional teams, such as designers, product managers, and fellow developers, to deliver top-notch, high-quality products.",
+        "Skillfully incorporating responsive design principles and guaranteeing seamless cross-browser compatibility.",
+        "Actively engaging in code reviews and offering valuable, constructive feedback to fellow developers.",
+      ],
+    },
+    {
+      title: "React.js Developer",
+      // company_name: "Starbucks",
+      icon: reactjs,
+      iconBg: "#383E56",
+      date: "May 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,16 +203,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Film Search",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to search films of any kind and genre from given API, that was provided by open source website 'The Movie Database' (TMDB).",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "API",
           color: "green-text-gradient",
         },
         {
@@ -215,41 +220,22 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: films,
+      source_code_link: "https://github.com/Ako2003/react-film",
+      demo_link: "https://film-react.vercel.app/"
+
     },
     {
-      name: "Job IT",
+      name: "Admin Panel",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that was created to manage and manipulate with the information that is collected in the given application. This website has such functionality as creating, deleting, editing a patient and calculating the total money for given range of time.",
       tags: [
         {
-          name: "react",
+          name: "laravel",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "backpack",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +243,31 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: adminpanel,
+      source_code_link: "https://github.com/Ako2003/laravel-booking-app",
+      demo_link: "https://legacyadminpanel.herokuapp.com"
+    },
+    {
+      name: "Language",
+      description:
+        "Web application for learning a language in which you can add words, their tenses and after have some quiz to test your knowledge. To login use 'admin@example.com' and 'example'",
+      tags: [
+        {
+          name: "laravel",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "backpack",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: language,
+      source_code_link: "https://github.com/Ako2003/french",
+      demo_link: "http://french.herokuapp.com"
     },
   ];
   

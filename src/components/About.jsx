@@ -9,7 +9,7 @@ import { SectionWrapper } from '../hoc';
 const ServiceCard = ( {index, title, icon} ) => (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div 
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        variants={fadeIn("right", "spring", 0.65 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
       <div
@@ -40,7 +40,7 @@ function About(){
         variants={fadeIn("","",0.1,1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworls like React, Node.js, and Three.js. I'm quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real wordl problems. Let's work together to bring your ideas to life!
+        As a software developer, I possess proficiency in a wide range of technologies and frameworks, including <span className="text-white font-bold">HTML, CSS, PHP, Laravel, JavaScript, TypeScript, Tailwind CSS, React, Node.js, Express.js, Figma, GitHub, and MongoDB</span> . With my quick learning abilities and a collaborative approach, I am committed to crafting efficient, scalable, and user-friendly solutions that address real-world challenges.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

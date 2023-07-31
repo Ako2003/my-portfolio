@@ -7,11 +7,11 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, demo_link}) => {
   const [linksVisible, setLinkVisibility] = useState(false);
 
   return(
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.7, 0.75)}>
       <Tilt 
         options={{
           max: 45,
@@ -55,12 +55,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-4 flex justify-content flex-wrap gap-2'>
           {tags.map((tag)=>(
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
+        </div>
+        <div className='mt-2'>
+            <a className='text-[13px] text-secondary underline mt-4' target='_blank' href={demo_link} rel="noreferrer">See Demo →</a>
         </div>
       </Tilt>
     </motion.div>
@@ -83,7 +86,7 @@ function Works(){
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and exprerience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve compe=lex probelms, work with different technologies, and manage projects effectively.
+          My portfolio exhibits my skills and expertise through real-world project examples. Each project is concisely described, accompanied by links to code repositories and live demos. These demonstrations highlight my proficiency in solving intricate problems, adapting to diverse technologies, and successfully managing projects.
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
