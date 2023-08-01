@@ -15,6 +15,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import nestjs from './tech/nestjs.png'
 import laravel from "./tech/laravel.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -60,5 +61,6 @@ export {
   films,
   language,
   tripguide,
-  devops
+  devops,
+  nestjs
 };

@@ -15,7 +15,7 @@ import {
     git,
     adminpanel,
     docker,
-    meta,
+    nestjs,
     films,
     language,
     devops,
@@ -149,7 +149,7 @@ import {
     {
       title: "Nest.js Developer",
       // company_name: "Meta",
-      icon: meta,
+      icon: nestjs,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
